@@ -1,7 +1,7 @@
-const BaseButton = (props) =>{
+const BaseButton = ({title,clickBtn}) =>{
     return(
-        <button className="btn" onClick={props.clickBtn}>
-            {props.title}
+        <button className="btn" onClick={clickBtn}>
+            {title}
         </button>
     )
 }
