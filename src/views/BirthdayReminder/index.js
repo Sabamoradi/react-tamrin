@@ -9,7 +9,7 @@ const BirthdayReminder = () => {
     SetItem([])
   };
   return (
-    <main>
+    <main className="main-birthday">
       <section className="container">
         <h3>
           {item.length} Birthday today

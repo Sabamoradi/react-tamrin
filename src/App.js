@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import BirthdayReminder from './views/BirthdayReminder/index'
+// import BirthdayReminder from './views/BirthdayReminder/index'
+import Tours from './views/Tours/index'
 function App() {
-  return (<BirthdayReminder />);
+  return (<Tours />);
 }
 
 export default App;
