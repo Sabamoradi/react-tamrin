@@ -5,7 +5,8 @@ import React, { useState } from "react";
 // import Reviews from './views/3-Reviews/index'
 // import Accordion from './views/4.Accordion/index'
 // import Menu from './views/5.Menu/index'
-import Tabs from "./views/6.Tabs/index";
+// import Tabs from "./views/6.Tabs/index";
+import Lorem from './views/8-lorem'
 function App() {
   return (
     // <BirthdayReminder />
@@ -13,7 +14,8 @@ function App() {
     // <Reviews />
     // <Accordion />
     // <Menu />
-    <Tabs />
+    // <Tabs />
+    <Lorem />
   );
 }
 
