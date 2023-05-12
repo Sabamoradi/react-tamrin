@@ -6,7 +6,8 @@ import React, { useState } from "react";
 // import Accordion from './views/4.Accordion/index'
 // import Menu from './views/5.Menu/index'
 // import Tabs from "./views/6.Tabs/index";
-import Lorem from './views/8-lorem'
+// import Lorem from './views/8-lorem'
+import Navbar from './views/11-navbar'
 function App() {
   return (
     // <BirthdayReminder />
@@ -15,7 +16,8 @@ function App() {
     // <Accordion />
     // <Menu />
     // <Tabs />
-    <Lorem />
+    // <Lorem />
+    <Navbar />
   );
 }
 
