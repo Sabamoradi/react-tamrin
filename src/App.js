@@ -1,23 +1,10 @@
 import React, { useState } from "react";
+import Views from "./views";
+import './styles/root.css';
 
-// import BirthdayReminder from './views/1-BirthdayReminder/index'
-// import Tours from "./views/2-Tours/index";
-// import Reviews from './views/3-Reviews/index'
-// import Accordion from './views/4.Accordion/index'
-// import Menu from './views/5.Menu/index'
-// import Tabs from "./views/6.Tabs/index";
-// import Lorem from './views/8-lorem'
-import Navbar from './views/11-navbar'
 function App() {
   return (
-    // <BirthdayReminder />
-    // <Tours />
-    // <Reviews />
-    // <Accordion />
-    // <Menu />
-    // <Tabs />
-    // <Lorem />
-    <Navbar />
+    <Views />
   );
 }
 

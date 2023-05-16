@@ -16,7 +16,7 @@ const BirthdayReminder = () => {
         </h3>
         
         <List data={item} />
-        <BaseButton clickBtn={clickBtn} title="clear All" />
+        <BaseButton clickBtn={clickBtn} btnColor="#673ab7" color="#fff" title="clear All" />
       </section>
     </main>
   );

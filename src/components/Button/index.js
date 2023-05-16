@@ -1,6 +1,8 @@
-const BaseButton = ({title,clickBtn}) =>{
+import './index.css'
+
+const BaseButton = ({title,clickBtn,btnColor,color}) =>{
     return(
-        <button className="btn" onClick={clickBtn}>
+        <button className="btn" style={{backgroundColor:btnColor,color:color}} onClick={clickBtn}>
             {title}
         </button>
     )
