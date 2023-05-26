@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import Views from "./views";
-import './styles/root.css';
-
+import "./styles/root.css";
+import RouteFile from "./route/index";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
-    <Views />
+    <>
+      <Router>
+        <Views />
+        <RouteFile />
+      </Router>
+    </>
   );
 }
 

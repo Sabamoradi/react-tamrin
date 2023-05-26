@@ -6,7 +6,15 @@
 // import Tabs from "./views/6.Tabs/index";
 // import Lorem from './views/8-lorem'
 // import Navbar from './views/11-navbar'
-
+import { Link } from "react-router-dom";
+const routerItem = [
+  {
+    route: "/birthday",
+    title: "Birthday",
+    id: 1,
+    src: "https://all-react-projects.netlify.app/images/pro1.png",
+  },
+];
 const Views = () => {
   return (
     <>
@@ -14,9 +22,27 @@ const Views = () => {
         <h1>React Projects</h1>
       </div>
       <section className="projects-section">
-        <div class="header">
+        <div className="header">
           <h2>Basic Projects</h2>
-          <div class="underline"></div>
+          <div className="underline"></div>
+        </div>
+        <div className="mainPro_wrapper">
+          <ul className="mainPro">
+            {routerItem.map((el) => {
+              return (
+                <li key={el.id}>
+                  <article>
+                    <Link to={el.route}>
+                      <img src={el.src} />
+                      <div className="footer">
+                        <h4>Birthday Remainder</h4>
+                      </div>
+                    </Link>
+                  </article>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
       {/* <BirthdayReminder /> */}

@@ -3,6 +3,7 @@ import List from "../../components/List/index";
 import data from "./data";
 import "./index.css";
 import BaseButton from "../../components/Button/index";
+import { Link } from 'react-router-dom';
 const BirthdayReminder = () => {
   const [item, SetItem] = useState(data);
   const clickBtn = () => {
