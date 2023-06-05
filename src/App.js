@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BirthdayReminder from "./views/1-BirthdayReminder";
 import Tours from "./views/2-Tours";
 import Reviews from "./views/3-Reviews";
-import Accordion from "./views/4.Accordion/index";
-import Menu from "./views/5.Menu/index";
-// import Tabs from "./views/6.Tabs/index";
-// import Lorem from './views/8-lorem'
+import Accordion from "./views/4.Accordion";
+import Menu from "./views/5.Menu";
+import Tabs from "./views/6.Tabs";
+import Lorem from './views/8-lorem'
 // import Navbar from './views/11-navbar'
 function App() {
   return (
@@ -32,6 +32,12 @@ function App() {
           </Route>
           <Route path="/menu">
             <Menu />
+          </Route>
+          <Route path="/tabs">
+            <Tabs />
+          </Route>
+          <Route path="/lorem">
+            <Lorem />
           </Route>
         </Switch>
       </Router>

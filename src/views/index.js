@@ -21,14 +21,26 @@ const routerItem = [
   {
     route: "/accordion",
     title: "Accordion",
-    id: 3,
+    id: 4,
     src: require("./assets/image/pro4.png"),
   },
   {
     route: "/menu",
     title: "Menu",
-    id: 3,
+    id: 5,
     src: require("./assets/image/pro5.png"),
+  },
+  {
+    route: "/tabs",
+    title: "Tabs",
+    id: 6,
+    src: require("./assets/image/pro6.png"),
+  },
+  {
+    route: "/lorem",
+    title: "Lorem",
+    id: 6,
+    src: require("./assets/image/pro8.png"),
   },
 ];
 const Views = () => {
