@@ -1,14 +1,39 @@
 import React, { useState } from "react";
 import Views from "./views";
 import "./styles/root.css";
-import RouteFile from "./route/index";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import BirthdayReminder from "./views/1-BirthdayReminder";
+import Tours from "./views/2-Tours";
+import Reviews from "./views/3-Reviews";
+import Accordion from "./views/4.Accordion/index";
+import Menu from "./views/5.Menu/index";
+// import Tabs from "./views/6.Tabs/index";
+// import Lorem from './views/8-lorem'
+// import Navbar from './views/11-navbar'
 function App() {
   return (
     <>
       <Router>
-        <Views />
-        <RouteFile />
+        <Switch>
+          <Route exact path="/">
+            <Views />
+          </Route>
+          <Route path="/birthday">
+            <BirthdayReminder />
+          </Route>
+          <Route path="/tours">
+            <Tours />
+          </Route>
+          <Route path="/reviews">
+            <Reviews />
+          </Route>
+          <Route path="/accordion">
+            <Accordion />
+          </Route>
+          <Route path="/menu">
+            <Menu />
+          </Route>
+        </Switch>
       </Router>
     </>
   );

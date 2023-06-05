@@ -4,10 +4,11 @@ const MenuItem = ({ menuData }) => {
       {menuData.map(el => {
         return (
           <article className="menu-item" key={el.id}>
+            <img src={el.img} className="photo" />
             <div className="item-info">
-              <h2>
+              <h4>
                 {el.category}
-              </h2>
+              </h4>
               <header>
                 <h4>
                   {el.title}

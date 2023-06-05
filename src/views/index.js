@@ -1,18 +1,34 @@
-// import BirthdayReminder from './1-BirthdayReminder/index'
-// import Tours from "./views/2-Tours/index";
-// import Reviews from './views/3-Reviews/index'
-// import Accordion from './views/4.Accordion/index'
-// import Menu from './views/5.Menu/index'
-// import Tabs from "./views/6.Tabs/index";
-// import Lorem from './views/8-lorem'
-// import Navbar from './views/11-navbar'
 import { Link } from "react-router-dom";
 const routerItem = [
   {
     route: "/birthday",
-    title: "Birthday",
+    title: "Birthday Remainder",
     id: 1,
-    src: "https://all-react-projects.netlify.app/images/pro1.png",
+    src: require("./assets/image/pro1.png"),
+  },
+  {
+    route: "/tours",
+    title: "Tours",
+    id: 2,
+    src: require("./assets/image/pro2.png"),
+  },
+  {
+    route: "/reviews",
+    title: "Reviews",
+    id: 3,
+    src: require("./assets/image/pro3.png"),
+  },
+  {
+    route: "/accordion",
+    title: "Accordion",
+    id: 3,
+    src: require("./assets/image/pro4.png"),
+  },
+  {
+    route: "/menu",
+    title: "Menu",
+    id: 3,
+    src: require("./assets/image/pro5.png"),
   },
 ];
 const Views = () => {
@@ -35,7 +51,7 @@ const Views = () => {
                     <Link to={el.route}>
                       <img src={el.src} />
                       <div className="footer">
-                        <h4>Birthday Remainder</h4>
+                        <h4>{el.title}</h4>
                       </div>
                     </Link>
                   </article>
@@ -45,14 +61,6 @@ const Views = () => {
           </ul>
         </div>
       </section>
-      {/* <BirthdayReminder /> */}
-      {/* // <Tours />
-    // <Reviews />
-    // <Accordion />
-    // <Menu />
-    // <Tabs />
-    // <Lorem />
-    // <Navbar /> */}
     </>
   );
 };
